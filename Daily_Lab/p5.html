@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="abc"></p>
+    <script>
+        var person={Name:"Saumya",SName:"Sarngal",age:"19"};
+        var txt="";
+        var x;
+       for(x in person)
+        {
+            txt+=person[x]+" ";
+        }
+        document.getElementById("abc").innerHTML=txt;
+
+        var keys=Object.keys(person);
+        for(var i=0;i<keys.length;i++)
+        {
+            txt+=person[keys[i]]+" ";
+        }
+        document.getElementById("abc").innerHTML=txt;
+        var i=0;
+        do
+        {
+            txt+=person[keys[i]]+" ";
+            i++;
+        }while(i<keys.length)
+        document.getElementById("abc").innerHTML=txt;
+    </script>
+</body>
+</html>

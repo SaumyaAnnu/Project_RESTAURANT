@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submission Page</title>
+</head>
+<body>
+  <h1>Form Submitted Successfully!</h1>
+  <p id="message"></p>
+
+  <script>
+    // Retrieve data from localStorage
+    const name = localStorage.getItem('name');
+    if (name) {
+      document.getElementById('message').textContent = `Hello, ${name}!`;
+      // Optional: Clear stored data after displaying
+      localStorage.removeItem('name');
+    } else {
+      document.getElementById('message').textContent = 'No data found.';
+    }
+  </script>
+</body>
+</html>
