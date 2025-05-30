@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1Restaurant.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<!--Head section(Navbar)-->
+  <header>       
+    <div class="container">
+      <img src="ResLogoo-photoaidcom-cropped.jpg" alt="Logo" class="logo">
+     
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="Cart">Cart</a>
+        <a href="#Signin">Signin</a>
+        <a href="Register">Register</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+<!--Main Para-->
+  <section class="main">
+    <h2>Delicious Food, Delivered Fresh</h2>
+    <p>Experience the best cuisines from the comfort of your home.</p>
+  </section>
+<!--Menu section-->
+  <section id="menu" class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="item">
+        <h3>Pizza Margherita</h3>
+        <p>Classic delight with fresh mozzarella and basil.</p>
+        <img src="pizza-with-cheese-brown-wooden-surface-bright-surface.jpg" alt="Pizza Margherita">
+      </div>
+      <div class="item">
+        <h3>Pasta Alfredo</h3>
+        <p>Creamy white sauce pasta with herbs and cheeze.</p>
+        <img src="side-view-pasta-with-cheese-chicken-with-slices-bread.jpg" alt="Pasta Alfredo">
+      </div>
+      <div class="item">
+        <h3>Veg Burger</h3>
+        <p>Juicy burger loaded with veggies and cheese.</p>
+        <img src="still-life-delicious-american-hamburger.jpg" alt="Veg Burger">
+      </div>
+      <div class="item">
+        <h3>Mojito</h3>
+        <p>The only solution for the summers is lemon-mint mijito</p>
+        <img src="traditional-mojito-with-ice-mint-table.jpg" alt="">
+      </div>
+      <div class="item">
+        <h3>Chai</h3>
+        <p>Made with love where every sip carries essence of seasons</p>
+        <img src="steaming-cup-coffee-with-cinnamon-sticks-star-anise-coffee-beans-dark-background.jpg" alt="Chai">
+      </div>
+      <div class="item">
+        <h3>Coffee</h3>
+        <p>Beverage for your mood</p>
+        <img src="front-view-cup-cappuccino-with-cookies-book-table.jpg" alt="Coffee">
+      </div>
+      <div class="item">
+        <h3>Momos</h3>
+        <p>Feels like Steamed filed dumplings straight from Tibet</p>
+        <img src="high-angle-japanese-dumplings-assortment.jpg" alt="Momos">
+      </div>
+      <div class="item">
+        <h3>Stuffed Prantha</h3>
+        <p>Filled with onion,garlic and cheeze it brings joy to tongue</p>
+        <img src="azerbaijani-gutab-stuffed-flatbread-with-minced-meat-served-with-sumac.jpg" alt="">
+      </div>
+      <div class="item">
+        <h3>Noodles</h3>
+        <p>Bringing the flavour of chinese cuisine to your tongue</p>
+        <img src="high-angle-tasty-composition-noodles-table.jpg" alt="Noodles">
+      </div>
+      <div class="item">
+        <h3>Rajma-Chawal</h3>
+        <p>Taste of Jammu</p>
+        <img src="rajma.jpg" alt="">
+      </div>
+      <div class="item">
+        <h3>Panner-tikka</h3>
+        <p>Yours and mine all time favourite</p>
+        <img src="Paneer-Tikka-_LR.jpg" alt="">
+      </div>
+       <div class="item">
+        <h3>Brownie</h3>
+        <p>A devour of pure chocolate you will never forget</p>
+        <img src="chocolate-brownie-cake-piece-stack-plate-homemade-pastries.jpg" alt="brownie">
+      </div>
+    </div>
+  </section>
+  <!--Cart-->
+<section id="cart" class="cart-section">
+  <h2>Your Cart</h2>
+  <div class="cart-items">
+    <!-- Cart items will appear here dynamically -->
+  </div>
+  <div class="cart-total">
+    <strong>Total:</strong> ₹<span id="cart-total">0</span>
+  </div>
+  <button class="checkout-btn">Proceed to Checkout</button>
+</section>
+<!--Signin section-->
+  <section class="signin-section">
+  <h2>Customer Sign In</h2>
+  <form class="signin-form" action="#" method="post">
+  
+    <div class="signin-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    
+    <div class="signin-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    </div>
+
+    <button type="submit" class="signin-btn">Sign In</button>
+    <p class="signup-text">Don't have an account? <a href="#">Register here</a></p>
+  </form>
+</section>
+<!--Register section-->
+<section class="registration-section">
+  <h2>Customer Registration</h2>
+  <form class="registration-form" action="#" method="post">
+    
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Create Password</label>
+      <input type="password" id="password" name="password" placeholder="Create a password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password" required>
+    </div>
+
+    <button type="submit" class="register-btn">Register</button>
+    <p class="signin-text">Already have an account? <a href="#">Sign in here</a></p>
+  </form>
+</section>
+
+<!--Contact section-->
+  <section id="contact" class="contact-section">
+    <p id="about">We are a passionate team of chefs and food lovers, committed to serving the best dishes with fresh ingredients and lots of love.</p>
+    <br>
+    <h2>Contact Us</h2>
+    <p>Email:<a style="color:#ff6347; text-decoration: none;" href="mailto:saumya032.annu08@gmail.com">saumya032.annu08@gmail.com</a></p>
+    <p>Call At :+91 7788XXXXXX</p>
+</a>
+
+  </section>
+<!--Follow us section-->
+<section class="follow-us">
+  <h2>Follow Us</h2>
+  <div class="social-icons">
+    <a href="https://instagram.com" target="_blank" class="icon instagram" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://linkedin.com" target="_blank" class="icon linkedin" title="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://wa.me/1234567890" target="_blank" class="icon whatsapp" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://t.me/yourchannel" target="_blank" class="icon telegram" title="Telegram">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </div>
+</section>
+
+<!--Footer end part-->
+  <footer>
+    <p>&copy; 2025 'Prefect Grill' All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+   
