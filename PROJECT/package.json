@@ -1,0 +1,25 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "This Project is created by Saumya Sarngal 2023BCSE032 and Annu Mathur 2023BCSE08 of NIT SRINAGAR.\r The Project is on \"Restaurant\".\r We have created our Website using HTML,CSS,JAVASCRIPT and NODEjs.\r We have named our Restaurant as 'Perfect Grill'.",
+  "main": "Restaurant.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaumyaAnnu/Project_RESTAURANT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaumyaAnnu/Project_RESTAURANT/issues"
+  },
+  "homepage": "https://github.com/SaumyaAnnu/Project_RESTAURANT#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0"
+  }
+}
